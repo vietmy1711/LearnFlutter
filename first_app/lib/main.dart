@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'question.dart';
 // void main() {
 //   runApp(MyApp());
 // }
@@ -26,7 +27,11 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    var questions = ["con cu", "con chim", "con cuuuu"];
+    var questions = [
+      "kjngfjkfneqfnu",
+      "con qưeqeqeqe",
+      "qcưcqcqcưc qưeqưeqưewqeqeqeq"
+    ];
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(
@@ -35,7 +40,7 @@ class _MyAppState extends State<MyApp> {
             ),
             body: Column(
               children: [
-                Text(questions[_index]),
+                Question(questions[_index]),
                 RaisedButton(
                     child: Text("Answer 1"), onPressed: _answerQuestion),
                 RaisedButton(
