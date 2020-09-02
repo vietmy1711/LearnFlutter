@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
 
   void answerQuestion() {
     setState(() {
-      if (index == 1) {
+      if (index == 2) {
         index = 0;
         return;
       }
