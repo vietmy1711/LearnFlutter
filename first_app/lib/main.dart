@@ -12,15 +12,15 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var index = 0;
+  var _index = 0;
 
-  void answerQuestion() {
+  void _answerQuestion() {
     setState(() {
-      if (index == 2) {
-        index = 0;
+      if (_index == 2) {
+        _index = 0;
         return;
       }
-      index++;
+      _index++;
     });
   }
 
@@ -35,9 +35,9 @@ class _MyAppState extends State<MyApp> {
             ),
             body: Column(
               children: [
-                Text(questions[index]),
+                Text(questions[_index]),
                 RaisedButton(
-                    child: Text("Answer 1"), onPressed: answerQuestion),
+                    child: Text("Answer 1"), onPressed: _answerQuestion),
                 RaisedButton(
                     child: Text("Answer 2"), onPressed: () => print("object")),
                 RaisedButton(
